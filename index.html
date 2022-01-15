@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/bvselect.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- <Nav>  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse justify-content-between navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <form class="form-inline my-2 my-lg-0 position-relative">
+            <input
+              class="form-control m-0"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success my-2 my-sm-0 position-absolute"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+
+          <select id="selectbox">
+            <option data-separator="true">Select Option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+          <div class="other-links d-flex">
+            <!-- switch langs  -->
+            <a href="#" class="lang d-flex align-items-center">
+              <i class="fas fa-globe"></i>
+              <span class="switch">ع</span>
+            </a>
+            <!-- Shopping Cart  -->
+            <div class="shopping">
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+            <!-- Sign In  -->
+            <div class="sign text-uppercase">
+              <a href="#">sign in </a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </nav>
+
+    <!-- </Nav>  -->
+
+    <!-- Header  -->
+
+    <section class="Header">
+      <div class="container">
+        <img class="w-100" src="https://via.placeholder.com/1120x240" alt="" />
+      </div>
+    </section>
+    <!-- </Header> -->
+
+    <!-- Tabs Links  -->
+
+    <section class="tabs-links">
+        <div class="container">
+            <div class="wrapper d-flex">
+                <div data-target="mahashi" class="tab">
+                    <img class="w-100" src="imgs/1.jpeg" alt="" />
+                    <span>Mahashi </span>
+                </div>
+                <div data-target="pastries" class="tab">
+                    <img class="w-100" src="imgs/1.jpeg" alt="" />
+                    <span>Pastries  </span>
+                </div>
+                <div data-target="spices" class="tab">
+                    <img class="w-100" src="imgs/1.jpeg" alt="" />
+                    <span>Spices  </span>
+                </div>
+                <div class="tab">
+                    <img class="w-100" src="imgs/1.jpeg" alt="" />
+                    <span>Mahashi </span>
+                </div>
+                <div class="tab">
+                    <img class="w-100" src="imgs/1.jpeg" alt="" />
+                    <span>Mahashi </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- This will appear when scrolling down  -->
+
+    <section class="scrolling-tabs-links" >
+        <div class="container">
+            <div class="tabs">
+                <a data-target="mahashi" class = "active" href="#">Mahashi </a>
+                <a data-target="pastries" href="#">Pastries  </a>
+                <a data-target="spices" href="#">Spices </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mahashi Section  -->
+
+    <section class="mahashi " id="mahashi">
+        <div class="container">
+            <h2>Mahashi </h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pastries  mahashi " id="pastries">
+        <div class="container">
+            <h2>Pastries </h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mahashi spices " id="spices">
+        <div class="container">
+            <h2>Spices </h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="item">
+                        <img class="w-100" src="imgs/1.jpeg" alt="">
+                        <div class="item-caption d-flex justify-content-between align-items-center">
+                            <h5>Item Name </h5>
+                            <span>0.7 BHD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bvselect.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
