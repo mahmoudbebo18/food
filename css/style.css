@@ -148,7 +148,8 @@ body {
     font-weight: 600; }
   .mahashi .item img {
     height: 240px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    cursor: pointer; }
   .mahashi .item .item-caption {
     margin-top: 8px;
     margin-bottom: 16px; }
