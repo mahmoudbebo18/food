@@ -33,11 +33,14 @@ $(document).ready(function () {
 
 $(window).scroll(function(){
     if($(window).scrollTop() >= $(".mahashi").offset().top - $(".navbar").innerHeight()){
-        $(".scrolling-tabs-links").addClass("appear")
+        $(".scrolling-tabs-links").addClass("appear");
     }else{
-        $(".scrolling-tabs-links").removeClass("appear")
+        $(".scrolling-tabs-links").removeClass("appear");
     }
-})
+    
+});
+
+
 
 $(document).ready(function () {
   $(".scrolling-tabs-links a").click(function (e) {
@@ -56,4 +59,6 @@ $(document).ready(function () {
       400
     );
   });
+
+  
 });
