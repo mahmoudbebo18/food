@@ -24,6 +24,8 @@
 $mainColor: #475731;
 $roboto: "Roboto";
 
+$posMiacColor: #109a66;
+
 body {
   font-family: $roboto;
   color: $mainColor;
@@ -220,7 +222,6 @@ body {
 
 /*****************globals*************/
 body {
-  font-family: "open sans";
   overflow-x: hidden;
 }
 
@@ -284,9 +285,8 @@ img {
   animation-duration: 0.3s;
   height: 100%;
 }
-.tab-pane{
+.tab-pane {
   height: 100%;
-
 }
 
 .card {
@@ -437,7 +437,7 @@ img {
     transform: scale(1);
   }
 }
-.modal{
+.modal {
   z-index: 99999;
 }
 .product__modal {
@@ -460,6 +460,307 @@ img {
     /* Handle */
     &::-webkit-scrollbar-thumb {
       background: $mainColor;
+    }
+  }
+}
+
+/*POS PAGE */
+
+.pos-nav {
+  padding: 24px 0;
+  .nav-tabs {
+    border: none;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    position: relative;
+    padding: 8px 0;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #d7d7d7;
+      border-radius: 10px;
+    }
+    .nav-item {
+      width: 150px;
+      flex-shrink: 0;
+      margin-bottom: 0;
+      @media (max-width: 767px) {
+        width: 120px;
+      }
+      .nav-link {
+        border-radius: 0.25rem;
+        border: 2px solid transparent;
+        margin-inline-end: 24px;
+        box-shadow: 0 0 5px #dce2e0;
+        background-color: #fff;
+        font-weight: bold;
+        color: #aeb7b4;
+        @media (max-width: 767px) {
+          padding: 4px;
+          font-size: 14px;
+          margin-inline-end: 12px;
+        }
+        svg {
+          margin-bottom: 4px;
+        }
+      }
+      .nav-link.active {
+        border-color: #29805d;
+        color: #29805d;
+        svg {
+          fill: #29805d;
+          stroke: #29805d;
+        }
+      }
+    }
+  }
+}
+
+/*products */
+
+.porducts {
+  padding: 24px 0 50px 0;
+  .products-main-col{
+    @media(max-width:991px){
+      margin-bottom: 24px;
+    }
+  }
+  .product-container {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 100%;
+    @media (max-width: 575px) {
+      padding: 16px 8px;
+    }
+  }
+  .products-header {
+    color: $posMiacColor;
+    align-items: center;
+    padding: 0 15px;
+    @media (max-width: 767px) {
+      padding: 0 4px;
+    }
+    @media (max-width: 575px) {
+      flex-wrap: wrap;
+    }
+    .add-item {
+      cursor: pointer;
+      @media (max-width: 575px) {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 13px;
+      }
+    }
+    .search-form {
+      .search-input {
+        border: 1px solid #dadada;
+        padding: 8px 8px 8px 14px;
+        border-radius: 24px;
+        background-color: #f1f1f1;
+        outline: none;
+        margin-inline-end: 8px;
+        color: #aeb7b4;
+        &::placeholder {
+          color: #dadada;
+        }
+      }
+      .submit-search {
+        border: none;
+        display: inline-flex;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $posMiacColor;
+        color: #ffffff;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    height: 550px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #d7d7d7;
+      border-radius: 10px;
+    }
+    .product-content {
+      flex-basis: 20%;
+      padding: 0 15px;
+      margin-bottom: 16px;
+      @media (max-width: 767px) {
+        flex-basis: 25%;
+        padding: 0 4px;
+      }
+      @media (max-width: 575px) {
+        flex-basis: 33.3333%;
+      }
+      @media (max-width: 425px) {
+        flex-basis: 50%;
+      }
+      img {
+        border: 2px solid #ededed;
+        padding: 2px;
+        border-radius: 5px;
+        margin-bottom: 16px;
+      }
+      .product-name {
+        font-size: 14px;
+      }
+      span {
+        color: $posMiacColor;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/*check-out*/
+.check-out {
+  background-color: #fff;
+  border-radius: 8px;
+  h6 {
+    padding: 8px;
+  }
+  .items-table {
+    height: 400px;
+    overflow-y: scroll;
+    display: block;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #d7d7d7;
+      border-radius: 10px;
+    }
+    thead tr {
+      background-color: #f1f1f1;
+    }
+    thead th {
+      border: none;
+    }
+    .item-name {
+      width: 35%;
+    }
+    .name-td {
+      i {
+        margin-inline-end: 8px;
+      }
+      span {
+        color: #929493;
+      }
+    }
+    .inc-dec {
+      .up,
+      .down {
+        border-radius: 50%;
+        border-width: 2px;
+        width: 25px;
+        height: 25px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        box-shadow: none !important;
+        outline: none !important;
+        background-color: transparent;
+        border-color: #109a66;
+        color: #109a66;
+      }
+      .counter-input {
+        width: 30%;
+        border: none;
+        text-align: center;
+        margin: 0 !important;
+        font-weight: bold;
+        box-shadow: none !important;
+      }
+    }
+  }
+  .total-price {
+    padding: 16px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    .discount {
+      h6 {
+        color: #8b8f8e;
+        font-weight: bold;
+      }
+      span {
+        display: block;
+        background-color: #fff;
+        padding: 8px 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    }
+    .subtotal {
+      h6,
+      span {
+        color: #8b8f8e;
+        font-weight: bold;
+      }
+    }
+    .tax {
+      h6 {
+        color: #8b8f8e;
+        font-weight: bold;
+        p {
+          display: inline;
+          color: $posMiacColor;
+        }
+      }
+      span {
+        color: #8b8f8e;
+        font-weight: bold;
+      }
+    }
+  }
+  .total-paid {
+    padding: 16px;
+    h5 {
+      font-weight: bold;
+      color: #000000;
+    }
+    span {
+      color: $posMiacColor;
+      font-weight: bold;
     }
   }
 }

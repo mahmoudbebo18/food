@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation bar  -->
+
+    <nav class="pos-nav">
+      <div class="container-fluid">
+        <!-- Tab links  -->
+        <ul class="nav nav-tabs list-unstyled d-flex" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link active d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#coffee"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Coffee
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-cup"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M5 11h14v-3h-14z" />
+                <path d="M17.5 11l-1.5 10h-8l-1.5 -10" />
+                <path d="M6 8v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
+                <path d="M15 5v-2" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link d-flex flex-column align-items-center"
+              data-toggle="tab"
+              href="#beverages"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-coffee"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#adb8b4"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+                />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+              </svg>
+              Beverages
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- products && checkout  -->
+
+    <section class="porducts">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 products-main-col">
+            <div class="product-container">
+              <!-- Product header -->
+              <div class="products-header d-flex justify-content-between">
+                <!-- Adding New Item  -->
+                <div class="add-item">
+                  <i class="fas fa-plus"></i>
+                  <span class="font-weight-bold text-uppercase"
+                    >Add New Item</span
+                  >
+                </div>
+                <!-- Serach Products -->
+                <form class="search-form">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search Items Here..."
+                  />
+                  <button class="submit-search">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+
+              <!-- Product list  -->
+              <div class="product-list">
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                  <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                  <h4
+                    class="product-name text-capitalize font-weight-bold text-center"
+                  >
+                    Costa Coffee
+                  </h4>
+                  <span
+                    class="product-price font-weight-bold d-block text-center"
+                  >
+                    $7.99</span
+                  >
+                </div>
+                <div class="product-content">
+                    <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                    <h4
+                      class="product-name text-capitalize font-weight-bold text-center"
+                    >
+                      Costa Coffee
+                    </h4>
+                    <span
+                      class="product-price font-weight-bold d-block text-center"
+                    >
+                      $7.99</span
+                    >
+                  </div>
+                  <div class="product-content">
+                    <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                    <h4
+                      class="product-name text-capitalize font-weight-bold text-center"
+                    >
+                      Costa Coffee
+                    </h4>
+                    <span
+                      class="product-price font-weight-bold d-block text-center"
+                    >
+                      $7.99</span
+                    >
+                  </div>
+                  <div class="product-content">
+                    <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                    <h4
+                      class="product-name text-capitalize font-weight-bold text-center"
+                    >
+                      Costa Coffee
+                    </h4>
+                    <span
+                      class="product-price font-weight-bold d-block text-center"
+                    >
+                      $7.99</span
+                    >
+                  </div>
+                  <div class="product-content">
+                    <img src="imgs/prod.jpg" width="100%" alt="product image" />
+                    <h4
+                      class="product-name text-capitalize font-weight-bold text-center"
+                    >
+                      Costa Coffee
+                    </h4>
+                    <span
+                      class="product-price font-weight-bold d-block text-center"
+                    >
+                      $7.99</span
+                    >
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="check-out">
+              <h6 class="font-weight-bold text-center">Checkout</h6>
+
+              <div class="table-responsive-lg">
+                <!-- Chosen Items Table -->
+                <table class="table items-table">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="item-name">Name</th>
+                      <th scope="col">Quality</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="name-td">
+                        <i class="fas fa-trash"></i>
+                        <span class="font-weight-bold">Item Name </span>
+                      </td>
+                      <td class="inc-dec">
+                        <!-- Start Inc & Dec-->
+                        <div id="" class="incdec d-flex align-items-center">
+                          <button class="btn down" id="">
+                            <i class="fa fa-minus"></i>
+                          </button>
+                          <input
+                            class="form-control counter-input"
+                            type="text"
+                            value="1"
+                          />
+
+                          <button class="btn up" id="">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">$35</td>
+                    </tr>
+                    <tr>
+                      <td class="name-td">
+                        <i class="fas fa-trash"></i>
+                        <span class="font-weight-bold">Item Name </span>
+                      </td>
+                      <td class="inc-dec">
+                        <!-- Start Inc & Dec-->
+                        <div id="" class="incdec d-flex align-items-center">
+                          <button class="btn down" id="">
+                            <i class="fa fa-minus"></i>
+                          </button>
+                          <input
+                            class="form-control counter-input"
+                            type="text"
+                            value="1"
+                          />
+
+                          <button class="btn up" id="">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">$35</td>
+                    </tr>
+                    <tr>
+                      <td class="name-td">
+                        <i class="fas fa-trash"></i>
+                        <span class="font-weight-bold">Item Name </span>
+                      </td>
+                      <td class="inc-dec">
+                        <!-- Start Inc & Dec-->
+                        <div id="" class="incdec d-flex align-items-center">
+                          <button class="btn down" id="">
+                            <i class="fa fa-minus"></i>
+                          </button>
+                          <input
+                            class="form-control counter-input"
+                            type="text"
+                            value="1"
+                          />
+
+                          <button class="btn up" id="">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </td>
+                      <td class="font-weight-bold">$35</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- Total price  -->
+                <div class="total-price">
+                    <div class="discount d-flex align-items-center justify-content-between">
+                        <h6>Discount (%)</h6>
+                        <span>20</span>
+                    </div>
+                    <div class="subtotal d-flex align-items-center justify-content-between">
+                        <h6>Sub Total</h6>
+                        <span>$84.00</span>
+                    </div>
+                    <div class="tax d-flex align-items-center justify-content-between">
+                        <h6>Tax <p>1.5%</p>  </h6>
+                        <span>1.5</span>
+                    </div>
+                </div>
+                <div class="total-paid d-flex align-items-center justify-content-between">
+                    <h5>Total</h5>
+                    <span>$85.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Actions row -->
+
+        <div class="row">
+            <div class="col-lg-8 text-right">
+                <button class="btn mt-3 btn-outline-danger">
+                    Cancel Order
+                </button>
+                <button class="btn mt-3 ml-3 btn-outline-success">
+                    Hold Order
+                </button>
+            </div>
+            <div class="col-lg-4">
+                <button class="btn btn-block mt-3  btn-success">
+                    Pay ($85.00)
+                </button>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
