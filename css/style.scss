@@ -531,6 +531,9 @@ img {
 .porducts {
   padding: 24px 0 50px 0;
   height:calc(100vh - 148px);
+  @media(max-width:991px){
+    height: auto;
+  }
   .first-row{
     height: 85%;
   }
@@ -545,6 +548,9 @@ img {
     border-radius: 8px;
     height: 100%;
     overflow: auto;
+    @media(max-width:991px){
+      height: 350px;
+    }
     &::-webkit-scrollbar {
       width: 5px;
     }
@@ -651,6 +657,9 @@ img {
   background-color: #fff;
   border-radius: 8px;
   height: 100%;
+  @media(max-width:991px){
+    height: 350px;
+  }
     overflow: auto;
     &::-webkit-scrollbar {
       width: 5px;
@@ -783,6 +792,13 @@ img {
       color: $posMiacColor;
       font-weight: bold;
     }
+  }
+}
+.hold-order,.cancel-order{
+  @media(max-width:991px){
+    display: block;
+    width: 100%;
+    margin-left: 0 !important;
   }
 }
 
