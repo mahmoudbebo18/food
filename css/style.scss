@@ -530,7 +530,10 @@ img {
 
 .porducts {
   padding: 24px 0 50px 0;
-  height:calc(100vh - 140px);
+  height:calc(100vh - 148px);
+  .first-row{
+    height: 85%;
+  }
   .products-main-col{
     @media(max-width:991px){
       margin-bottom: 24px;
@@ -540,7 +543,7 @@ img {
     padding: 16px;
     background-color: #ffffff;
     border-radius: 8px;
-    height: 300px;
+    height: 100%;
     overflow: auto;
     &::-webkit-scrollbar {
       width: 5px;
@@ -647,7 +650,7 @@ img {
 .check-out {
   background-color: #fff;
   border-radius: 8px;
-  height: 300px;
+  height: 100%;
     overflow: auto;
     &::-webkit-scrollbar {
       width: 5px;
